@@ -2,7 +2,7 @@
     position: relative;
 
     &:before {
-        content: url("/assets/alert.png");
+        content: url("../images/alert.png");
         position: absolute;
         display: inline-block;
         top: 50%;

@@ -3,7 +3,7 @@
     height: $height;
     width: $width;
     transform: rotate($rotate);
-    background-image: url("/assets/#{$image}.jpg");
+    background-image: url("../images/#{$image}.jpg");
     background-size: contain;
 }
 
@@ -15,7 +15,7 @@
     bottom: $bottom;
     left: $left;
     right: $right;
-    background-image: url("/assets/border_corner.jpg");
+    background-image: url("../images/border_corner.jpg");
     background-size: cover;
     z-index: 10;
     transform: rotate($rotate);
@@ -133,7 +133,7 @@
 
         &::before {
             @include pseudoelements;
-            background: no-repeat url("/assets/star.png");
+            background: no-repeat url("../images/star.png");
             background-size: contain;
             height: 1rem;
             width: 1rem;
