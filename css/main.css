@@ -15876,4 +15876,44 @@ input[type=number] {
   letter-spacing: -0.1px;
 }
 
+.span__paragraph:last-of-type {
+  margin-top: -8px;
+}
+
+@media (min-width: 992px) {
+  .span__paragraph:last-of-type {
+    margin-top: -5px;
+  }
+}
+
+.span__yellow,
+.span__green {
+  letter-spacing: -1.5px;
+  line-height: 1.9;
+}
+
+@media (min-width: 992px) {
+  .span__yellow,
+  .span__green {
+    line-height: 1.75;
+  }
+}
+
+@media (max-width: 991px) {
+  .span__yellow,
+  .span__green {
+    font-size: 22px;
+  }
+}
+
+.span__yellow {
+  background-color: #FDFF53;
+  color: #DB3318;
+}
+
+.span__green {
+  background-color: #447F23;
+  color: #FDFF53;
+}
+
 /*# sourceMappingURL=main.css.map */
