@@ -1,0 +1,16 @@
+.section__header {
+    color: $primary_color;
+    font-size: 1.85rem;
+    letter-spacing: -0.125rem;
+    line-height: 1.2;
+    margin-bottom: 3.25rem;
+
+    @media (min-width: 992px) {
+        font-size: 2.125rem;
+        line-height: 1.28;
+    }
+}
+
+.section__image {
+    width: 43%;
+}
