@@ -1,0 +1,16 @@
+.main {
+    background: $light_color;
+    padding: 0.3125rem 1.0625rem;
+
+    @media (min-width: 992px) {
+        padding: 1.0625rem;
+    }
+}
+
+.main__header {
+    border: 2px solid $primary_color;
+
+    @media (min-width: 992px) {
+        border-width: 1px;
+    }
+}
