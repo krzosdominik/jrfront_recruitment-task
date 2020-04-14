@@ -16227,4 +16227,69 @@ input[type=number] {
   }
 }
 
+.product__promo {
+  color: #DB3318;
+}
+
+.timer__box {
+  z-index: 10;
+}
+
+@media (min-width: 992px) {
+  .timer__box {
+    position: absolute;
+    top: 25%;
+    right: 12%;
+  }
+  .timer__box span {
+    display: block;
+  }
+}
+
+.product__image {
+  position: relative;
+}
+
+.product__image::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 5rem;
+  width: 5rem;
+  bottom: 20%;
+  right: -20px;
+  background: no-repeat url("/assets/pl_satisfaction.png");
+  background-size: contain;
+}
+
+@media (min-width: 992px) {
+  .product__image::before {
+    height: 6.25rem;
+    width: 6.25rem;
+    bottom: 12%;
+    left: -1.25rem;
+  }
+}
+
+.product__image img {
+  height: 8.5rem;
+}
+
+@media (min-width: 992px) {
+  .product__image img {
+    height: 25rem;
+  }
+}
+
+.product__description {
+  margin-top: -0.625px;
+}
+
+@media (max-width: 991px) {
+  .product__description p {
+    font-size: 1rem;
+    display: inline;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
