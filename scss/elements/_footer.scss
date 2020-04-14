@@ -1,0 +1,28 @@
+%nav-pseudoelements {
+    content: "";
+    position: absolute;
+    height: 60%;
+    border: .5px solid $dark_color;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 991px) {
+    .nav-item {
+        font-size: 0.9rem;
+    }
+}
+
+.nav-item:nth-of-type(2) {
+    position: relative;
+
+    &::before {
+        @extend %nav-pseudoelements;
+        left: 0;
+    }
+
+    &::after {
+        @extend %nav-pseudoelements;
+        right: 0;
+    }
+}
