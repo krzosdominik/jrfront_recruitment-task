@@ -15876,6 +15876,10 @@ input[type=number] {
   letter-spacing: -0.1px;
 }
 
+.list__arrow {
+  list-style-image: url("/assets/arrow.png");
+}
+
 .span__paragraph:last-of-type {
   margin-top: -8px;
 }
