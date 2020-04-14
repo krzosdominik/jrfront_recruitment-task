@@ -15831,4 +15831,23 @@ input[type=number] {
   }
 }
 
+.section__header {
+  color: #6A2510;
+  font-size: 1.85rem;
+  letter-spacing: -0.125rem;
+  line-height: 1.2;
+  margin-bottom: 3.25rem;
+}
+
+@media (min-width: 992px) {
+  .section__header {
+    font-size: 2.125rem;
+    line-height: 1.28;
+  }
+}
+
+.section__image {
+  width: 43%;
+}
+
 /*# sourceMappingURL=main.css.map */
