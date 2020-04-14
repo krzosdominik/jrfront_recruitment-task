@@ -15920,4 +15920,29 @@ input[type=number] {
   color: #FDFF53;
 }
 
+.article__alert {
+  position: relative;
+}
+
+.article__alert:before {
+  content: url("/assets/alert.png");
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.article__alert span {
+  color: #DB3318;
+}
+
+@media (max-width: 991px) {
+  .article__alert p {
+    font-size: 1.32rem;
+    line-height: 1.3;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

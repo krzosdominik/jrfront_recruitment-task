@@ -1,0 +1,23 @@
+.article__alert {
+    position: relative;
+
+    &:before {
+        content: url("/assets/alert.png");
+        position: absolute;
+        display: inline-block;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+
+    span {
+        color: $secondary_color;
+    }
+
+    @media (max-width: 991px) {
+        p {
+            font-size: 1.32rem;
+            line-height: 1.3;
+        }
+    }
+}
