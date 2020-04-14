@@ -15871,6 +15871,65 @@ input[type=number] {
   background-color: #FBF5B7;
 }
 
+.card {
+  border-left-width: 0.125rem;
+}
+
+.card-body {
+  position: relative;
+}
+
+.card-body::before {
+  content: "-17kg";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.125rem;
+  width: 4.6875rem;
+  background-color: #719437;
+  color: #fff;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  font-size: 1.4375rem;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  top: -1.875rem;
+  right: -0.375rem;
+  box-shadow: 0 0.25rem 1.25rem -0.3125rem rgba(0, 0, 0, 0.75);
+}
+
+.card-title {
+  color: #bf4447;
+  letter-spacing: -0.125rem;
+}
+
+.card-text {
+  line-height: 1.15;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .card-text {
+    padding: 0 0.125rem;
+  }
+}
+
+@-moz-document url-prefix() {
+  .card-text {
+    padding: 0;
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .card-text {
+    font-size: 1.1rem;
+  }
+}
+
+.card__star {
+  color: #719437;
+}
+
 .list__item {
   margin-bottom: 0.8125rem;
   letter-spacing: -0.1px;
