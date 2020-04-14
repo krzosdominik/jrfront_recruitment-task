@@ -1,9 +1,12 @@
-window.addEventListener('DOMContentLoaded', function () {
+window.addEventListener('DOMContentLoaded', function() {
 
     var timer = document.getElementById('timer');
+    var form = document.querySelector('.order__form');
     var seconds = 60;
 
     timer.innerText = seconds;
+
+    window.addEventListener("scroll", startCount);
 
     function startCount() {
         var bounding = timer.getBoundingClientRect();
@@ -25,5 +28,13 @@ window.addEventListener('DOMContentLoaded', function () {
         };
     };
 
-    window.addEventListener("scroll", startCount);
+    form.addEventListener('submit', fromValidation, false);
+
+    function fromValidation(event) {
+        if (this.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+        this.classList.add('was-validated');
+    };
 });

@@ -16292,4 +16292,63 @@ input[type=number] {
   }
 }
 
+.order {
+  background-color: #F5F5F5;
+}
+
+.order hr {
+  border-width: 2px;
+}
+
+.order p span {
+  color: #6A2510;
+}
+
+.order__header {
+  color: #61a552;
+}
+
+@media (max-width: 992px) {
+  .order__header {
+    font-size: 1.25rem;
+  }
+}
+
+.input__prompt {
+  position: absolute;
+  top: 40px;
+  right: 0.3125rem;
+  height: 1.5625rem;
+  width: 1.5625rem;
+  background-color: #DCDEDD;
+  border-radius: 50%;
+  cursor: help;
+  z-index: 10;
+}
+
+.form__button {
+  background-color: #61a552;
+  font-size: 1rem;
+}
+
+@media (min-width: 992px) {
+  .form__button {
+    font-size: 1.375rem;
+  }
+}
+
+.table__price {
+  color: #61a552;
+}
+
+.table__shipping {
+  color: #6A2510;
+}
+
+@media (max-width: 991px) {
+  #paymentHelp {
+    font-size: 0.7rem;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
