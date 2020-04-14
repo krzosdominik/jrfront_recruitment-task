@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    
+    @media (min-width: 992px) {
+    font-size: 1.125rem;
+    padding: 0 2.5rem;
+    background-color: $body_bgColor;
+    }
+}
+
+@mixin pseudoelements () {
+    content: "";
+    position: absolute;
+    display: inline-block;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}

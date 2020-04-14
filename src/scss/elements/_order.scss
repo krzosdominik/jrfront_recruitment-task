@@ -1,0 +1,54 @@
+.order {
+    background-color: $order_bgColor;
+
+    hr {
+        border-width: 2px;
+    }
+
+    p span {
+        color: $primary_color;
+    }
+}
+
+.order__header {
+    color: $order_header_color;
+    
+    @media (max-width: 992px) {
+        font-size: 1.25rem;
+    }
+}
+
+.input__prompt {
+    position: absolute;
+    top: 40px;
+    right: 0.3125rem;
+    height: 1.5625rem;
+    width: 1.5625rem;
+    background-color: $input_prompt_bgColor;
+    border-radius: 50%;
+    cursor: help;
+    z-index: 10;
+}
+
+.form__button {
+    background-color: $order_header_color;
+    font-size: 1rem;
+
+    @media (min-width: 992px) {
+        font-size: 1.375rem;
+    }
+}
+
+.table__price {
+    color: $order_header_color;
+}
+
+.table__shipping {
+    color: $primary_color;
+}
+
+@media (max-width: 991px) {
+    #paymentHelp {
+        font-size: 0.7rem;
+    }
+}

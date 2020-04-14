@@ -1,0 +1,58 @@
+.product__promo {
+    color: $secondary_color;
+}
+
+.timer__box {
+    z-index: 10;
+    
+    @media (min-width: 992px) {
+        position: absolute;
+        top: 25%;
+        right: 12%;
+
+        span {
+            display: block;
+        }
+    }
+}
+
+.product__image {
+    position: relative;
+
+    &::before {
+        @include pseudoelements;
+        height: 5rem;
+        width: 5rem;
+        bottom: 20%;
+        right: -20px;
+        background: no-repeat url("../images/pl_satisfaction.png");
+        background-size: contain;
+
+        @media (min-width: 992px) {
+            height: 6.25rem;
+            width: 6.25rem;
+            bottom: 12%;
+            left: -1.25rem;
+        }
+    }
+
+    img {
+        height: 8.5rem;
+
+        @media (min-width: 992px) {
+            height: 25rem;
+        }
+    }
+}
+
+
+.product__description {
+    margin-top: -0.625px;
+
+    @media (max-width: 991px) {
+        p {
+            font-size: 1rem;
+            display: inline;
+        }
+    }
+}
