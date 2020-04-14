@@ -3,25 +3,46 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "browserslist": [
-    "last 1 version",
-    "> 1%"
-  ],
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "browser-sync": "^2.26.7",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
-    "gulp-sass": "^4.0.2",
-    "node-sass": "^4.12.0"
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode development",
+    "dist": "webpack --mode production",
+    "watch": "webpack --watch --mode development"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
+    "@popperjs/core": "^2.3.2",
     "bootstrap": "^4.4.1",
-    "gulp-sourcemaps": "^2.6.5"
+    "jquery": "^3.5.0",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.9.5",
+    "babel-core": "^7.0.0-0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "copy-webpack-plugin": "^5.0.3",
+    "css-loader": "^3.5.2",
+    "file-loader": "^4.0.0",
+    "img-loader": "^3.0.1",
+    "mini-css-extract-plugin": "^0.7.0",
+    "node-sass": "^4.13.1",
+    "prettier": "^2.0.4",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.3",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "postcss-loader": "^3.0.0",
+    "terser-webpack-plugin": "^1.3.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "html-webpack-plugin": "^3.2.0",
+    "html-beautify-webpack-plugin": "^1.0.5",
+    "clean-webpack-plugin": "^3.0.0",
+    "webpack-dev-server": "^3.7.2"
   }
 }
