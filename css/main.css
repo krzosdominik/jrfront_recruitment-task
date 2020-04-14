@@ -16217,4 +16217,14 @@ input[type=number] {
   }
 }
 
+.article__signature img {
+  width: 12rem;
+}
+
+@media (min-width: 992px) {
+  .article__signature img {
+    width: 25rem;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

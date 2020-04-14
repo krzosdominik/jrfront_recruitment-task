@@ -1,0 +1,7 @@
+.article__signature img {
+    width: 12rem;
+
+    @media (min-width: 992px) {
+            width: 25rem;
+    }
+}
