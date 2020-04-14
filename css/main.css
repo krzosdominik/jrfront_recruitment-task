@@ -16351,4 +16351,32 @@ input[type=number] {
   }
 }
 
+.nav-item:nth-of-type(2)::before, .nav-item:nth-of-type(2)::after {
+  content: "";
+  position: absolute;
+  height: 60%;
+  border: 0.5px solid #000;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+@media (max-width: 991px) {
+  .nav-item {
+    font-size: 0.9rem;
+  }
+}
+
+.nav-item:nth-of-type(2) {
+  position: relative;
+}
+
+.nav-item:nth-of-type(2)::before {
+  left: 0;
+}
+
+.nav-item:nth-of-type(2)::after {
+  right: 0;
+}
+
 /*# sourceMappingURL=main.css.map */
